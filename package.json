@@ -1,0 +1,17 @@
+{
+  "name": "rake-ssh",
+  "version": "1.0.0",
+  "description": "Ssh/sftp task.",
+  "main": "index.rake",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/rake-ssh.git"
+  },
+  "keywords": ["rake", "task"],
+  "author": "afei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeiship/rake-ssh/issues"
+  },
+  "homepage": "https://github.com/afeiship/rake-ssh#readme"
+}
