@@ -10,3 +10,6 @@ npm i -S afeiship/rake-ssh --registry=https://registry.npm.taobao.org
 ~~~
 rake -T
 ~~~
+
+## resources:
+- https://github.com/capistrano/sshkit/blob/master/EXAMPLES.md
