@@ -22,8 +22,8 @@ namespace :ssh do
   end
 
   desc "Upload directory"
-  task :upload do |task, args|
-    sshkit_config, ssh_options, host, dirs = RakeSsh.load("./test/tss.yaml")
+  task :upload, [:config] do |task, args|
+    sshkit_config, ssh_options, host, dirs = RakeSsh.load(args[:config])
     source, destination = dirs.values_at(*dirs.keys)
 
     # p sshkit_config
@@ -31,10 +31,8 @@ namespace :ssh do
 
     on host do
       within destination do
-        Dir["#{dir}/*"].each do |item|
-          puts item
-          # puts execute(:ls, "-alh")
-          # upload! item, destination, recursive: true
+        Dir["#{source}/*"].each do |item|
+          upload! item, destination, recursive: true
         end
       end
     end

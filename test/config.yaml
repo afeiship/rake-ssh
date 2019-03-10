@@ -2,8 +2,8 @@ sshkit_config:
   output_verbosity: :debug
   format: :pretty
 ssh_options:
-  username: fzheng
-  password: PASS_!@#
+  :user: fzheng
+  :password: PASS_!@#
 host: 192.168.1.11
 dirs:
   source: ./github/project
