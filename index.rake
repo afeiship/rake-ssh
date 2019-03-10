@@ -3,14 +3,6 @@ require "sshkit/dsl"
 require "./utils/config_sshkit.rb"
 include SSHKit::DSL
 
-# ssh_options, server, dirs = CONFIG.values_at("ssh_p")
-
-# p ssh_options
-# p serer
-# p sere
-
-## SSHKit configuration:
-
 namespace :ssh do
   # rake hello_with_args[afei,bash]
   task :configuration, [:sshkit_config, :ssh_options] do |task, args|
